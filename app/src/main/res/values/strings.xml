@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">LabExam.02</string>
     <string name="welcome_text">Welcome Back!</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forget_password">Forget Password?</string>">
+    <string name="continue_with">Or Continue With</string>">
+    <string name="not_registered">Not Registered?</string>">
+    <string name="join_family">Join Gains Famliy</string>">
+    <string name="join_to_family">Join to Gains Famliy!</string>">
+    <string name="view_workout">View all Schedules</string>">
+    <string name="type_select">Select Workout Type</string>">
 
 </resources>

@@ -27,6 +27,16 @@
         <activity android:name=".RegisterActivity"
             android:exported="false"
             tools:ignore="Instantiatable" />
+        <activity android:name=".HomeActivity"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".WorkTypesActivity"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

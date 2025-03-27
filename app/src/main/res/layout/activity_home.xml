@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="135dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="141dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logoappgains" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="378dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/navbar" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="79dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dumbell" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="79dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:srcCompat="@drawable/notification" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="79dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="377dp"
+        android:layout_height="322dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/bg" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="286dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="-40dp"
+        android:backgroundTint="@color/gold"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/view_workout"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="399dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="9dp"
+        android:fontFamily="@font/aldrich"
+        android:text="You can check our free workout plans!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="404dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Beginner Level"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="404dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Pro Level"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="404dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Lets Workout!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
