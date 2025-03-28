@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button // Import Button
+import android.widget.ImageView
 
 class HomeActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -15,6 +16,24 @@ class HomeActivity : AppCompatActivity() {
         val homeButton: Button = findViewById(R.id.btnHome)
         homeButton.setOnClickListener {
             val intent = Intent(this, WorkTypesActivity::class.java)
+            startActivity(intent)
+        }
+
+        val navUser: ImageView = findViewById(R.id.navHomeUser)
+        navUser.setOnClickListener {
+            val intent = Intent(this, UserProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+        val navWork: ImageView = findViewById(R.id.navHomeWork)
+        navWork.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
+
+        val navNoti: ImageView = findViewById(R.id.navHomeNoti)
+        navNoti.setOnClickListener {
+            val intent = Intent(this, NotificationActivity::class.java)
             startActivity(intent)
         }
     }

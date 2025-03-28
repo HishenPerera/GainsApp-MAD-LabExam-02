@@ -10,5 +10,14 @@
     <string name="join_to_family">Join to Gains Famliy!</string>">
     <string name="view_workout">View all Schedules</string>">
     <string name="type_select">Select Workout Type</string>">
+    <string name="logout">Logout</string>">
+    <string name="noti1">New Workout Plans and Updates</string>">
+    <string name="noti2">Online Workout Session Details</string>">
+    <string name="noti3">Gym Memberships and Details</string>">
+    <string name="noti4">New Diet Plans</string>">
+    <string name="msg">New Messages !</string>">
+    <string name="editprofile">Edit Profile Details</string>
+    <string name="updateprofile">Update Profile</string>
+
 
 </resources>

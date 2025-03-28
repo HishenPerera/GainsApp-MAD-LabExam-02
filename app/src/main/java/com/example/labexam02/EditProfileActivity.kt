@@ -3,37 +3,20 @@ package com.example.labexam02
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button // This import is not needed, you're using an ImageView
+import android.widget.Button
 import android.widget.ImageView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
-class WorkTypesActivity : AppCompatActivity() {
+class EditProfileActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_worktypes)
+        setContentView(R.layout.activity_editprofile)
 
-        val backButton: ImageView = findViewById(R.id.backWTBtn)
+        val backButton: ImageView = findViewById(R.id.backeditBtn)
         backButton.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)
-        }
-
-        val leanBulkLink: ImageView = findViewById(R.id.leanbulkLink)
-        leanBulkLink.setOnClickListener {
-            val intent = Intent(this, LeanBulkActivity::class.java)
-            startActivity(intent)
-        }
-
-        val CuttingLink: ImageView = findViewById(R.id.CuttingLink)
-        CuttingLink.setOnClickListener {
-            val intent = Intent(this, CuttingActivity::class.java)
-            startActivity(intent)
-        }
-
-        val BulkLink: ImageView = findViewById(R.id.BulkLink)
-        BulkLink.setOnClickListener {
-            val intent = Intent(this, BulkActivity::class.java)
+            val intent = Intent(this, UserProfileActivity::class.java)
             startActivity(intent)
         }
 
@@ -53,6 +36,19 @@ class WorkTypesActivity : AppCompatActivity() {
         navNoti.setOnClickListener {
             val intent = Intent(this, NotificationActivity::class.java)
             startActivity(intent)
+        }
+
+        val updateButton: Button = findViewById(R.id.updateBtn)
+        updateButton.setOnClickListener {
+            AlertDialog.Builder(this)
+                .setTitle("Update Successful")
+                .setMessage("Your profile details have been updated successfully.")
+                .setPositiveButton("OK") { dialog, _ ->
+                    dialog.dismiss()
+                    val intent = Intent(this, UserProfileActivity::class.java)
+                    startActivity(intent)
+                }
+                .show()
         }
     }
 }
